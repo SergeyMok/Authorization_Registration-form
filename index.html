@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Регистрация</title>
+
+    <script src="./scripts/registration.js" type="module" defer></script>
+
+    <link rel="stylesheet" href="./style/registration.css">
+
+</head>
+<body>
+    <main>
+        <form action="" method="post">
+            <div class="form-registration__auth-wrapper">
+                <button class="form-registration__btn-wrapper" id="btn-authorize">
+                    Авторизоваться
+                </button>
+            </div>
+
+            <div class="form-registration__content-wrapper">
+                <h1>
+                    Регистрация
+                </h1>
+                <div class="form-registration__fields-wrapper">
+                    <div class="fields-wrapper__email-wrapper">
+                        <label for="email" class="label-email">
+                            Email
+                        </label>
+
+                        <span class="star-input">
+                            *
+                        </span>
+
+                        <input type="email" placeholder="Введите email" id="email-registration">
+
+                        <div class="error-message">
+                            Поле обязательно для заполнения
+                        </div>
+                    </div>
+
+                    <div class="fields-wrapper__password-wrapper">
+                        <label for="password" class="label-password">
+                            Пароль
+                        </label>
+
+                        <span class="star-input">
+                            *
+                        </span>
+
+                        <input type="password" placeholder="Введите пароль" id="password-registration">
+
+                        <div class="error-message">
+                            Поле обязательно для заполнения
+                        </div>
+                    </div>
+
+                    <div class="form-registration__checkbox-wrapper">
+                        <span>
+                            *
+                        </span>
+
+                        <input type="checkbox" id="checkbox-registration">
+
+                        <label for="checkbox-registration" class="form-registration__label-checkbox">
+                            Я согласен получать обновления на почту
+                        </label>
+
+                        <div class="error-message">
+                            Поле обязательно для заполнения
+                        </div>
+                        
+                        <div class="form-registration__button-wrapper">
+                            <button id="register">
+                                Регистрация                            
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            
+        </form>
+    </main>   
+</body>
+</html>

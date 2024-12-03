@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1B2473;
+}
+
+form {
+    border-radius: 20px;
+    background-color: white;
+}
+
+.form-registration__auth-wrapper {
+    text-align: right;
+    padding: 11px 11px 0 0;
+}
+
+.form-registration__btn-wrapper {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    background-color: white;
+    color: #1A226B;
+}
+
+.form-registration__content-wrapper {
+    margin: 11px 45px 25px 35px;
+}
+
+h1 {
+    margin: 5px 0 13px 0;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #787878;
+}
+
+.form-registration__fields-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.label-email, .label-password {
+    display: block;
+    margin-left: 20px;
+}
+
+.form-registration__checkbox-wrapper {
+    position: relative;
+}
+
+.form-registration__label-checkbox {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 26px;
+    color: #787878;
+}
+
+input[type="checkbox"]:checked + .form-registration__label-checkbox::before {
+    content:  url(./../image/check.svg);
+    position: absolute;
+    left: 10px;
+    border: 2px solid #787878;
+    border-radius: 7px;
+}
+
+.form-registration__label-checkbox::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 16px;
+    left: 10px;
+    top: 1px;
+    border: 2px solid #787878;
+    border-radius: 7px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="email"], input[type="password"] {
+    width: 510px;
+    height: 50px;
+    margin-left: 10px;
+    padding-left: 15px;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+input::placeholder {
+    font-size: 28px;
+    font-weight: 700;
+    color: #CCCCCC;
+}
+
+.star-input {
+    position: absolute;
+    top: 24px;
+}
+
+.form-registration__button-wrapper {
+    display: flex;
+    margin-top: 50px;
+}
+
+.form-registration__button-wrapper > button {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: #1A226B;
+}
+
+.error-message {
+    display: none;
+    margin-left: 10px;
+    font-size: 0.8em;
+    color: red;
+}
+
+.fields-wrapper__email-wrapper, .fields-wrapper__password-wrapper {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+

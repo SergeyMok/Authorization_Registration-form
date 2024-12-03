@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Вход
+        </title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./style/entrance.css">
+        
+    </head>
+
+    <body>
+        <main>
+            <form action="" method="post">
+                <div class="form-authorization__register-wrapper">
+                    <button class="form-authorization__button-register" id="btn-register">
+                        Зарегистрироваться
+                    </button>
+                </div>
+
+                <div class="form-authorization__content-wrapper">
+                    <h1>
+                        ВХОД
+                    </h1>
+
+                    <div class="form-authorization__fields-wrapper">
+                        <div class="fields-wrapper__email-wrapper">
+                            <label for="email" class="label-email">
+                                Email
+                            </label>
+
+                            <span class="star-input">
+                                *
+                            </span>
+
+                            <input type="email" placeholder="Введите email" id="email-authorization">
+
+                            <div class="error-message">
+                                Поле обязательно для заполнения
+                            </div>
+                        </div>
+
+                        <div class="fields-wrapper__password-wrapper">
+                            <label for="password" class="label-password">
+                                Пароль
+                            </label>
+
+                            <span class="star-input">
+                                *
+                            </span>
+
+                            <input type="password" id="password-authorization" placeholder="Введите пароль">
+
+                            <div class="error-message">
+                                Поле обязательно для заполнения
+                            </div>
+                        </div>
+
+                        <div class="form-authorization__checkbox-wrapper">
+                            <span>
+                                *
+                            </span>
+
+                            <input type="checkbox" id="checkbox-authorization">
+
+                            <label for="checkbox-authorization" class="form-authorization__label-checkbox">
+                                Я согласен с <span class="licence">Правилами пользования приложением</span>
+                            </label>
+
+                            <div class="error-message">
+                                Поле обязательно для заполнения
+                            </div>
+                        </div>
+
+                        <div class="form-authorization__button-wrapper">
+                            <button id="btn-login">
+                                Войти
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <script src="./scripts/entrance.js" type="module"></script>        
+    </body>
+</html>
